@@ -14,6 +14,12 @@ function writeUserData(userId, name, email, imageUrl) {
 $( document ).ready(function() {
     console.log("starting document!!!!");
 
+
+    $(function ($){
+        $("#firebasebutton").click(function (evt){
+          console.log("firebasebutton was clicked");
+        });
+    });
     // Initialize Firebase
     console.log("Initialize Firebase");
     var config = {
@@ -37,7 +43,7 @@ $( document ).ready(function() {
             total_load_activePower  = data.val().load_activePower;
         } else {
            update_data(data.key, parseInt(data.val()))
-           writeUserData('pornchai', 'pornchai', 'chai@ait', 'https://bnk48-www-html.s3-ap-southeast-1.amazonaws.com/uploads/members/file-4db2c8a97263f27dfa98798dc4c5baaa.jpg')
+           //writeUserData('pornchai', 'pornchai', 'chai@ait', 'https://bnk48-www-html.s3-ap-southeast-1.amazonaws.com/uploads/members/file-4db2c8a97263f27dfa98798dc4c5baaa.jpg')
         }
     });
 

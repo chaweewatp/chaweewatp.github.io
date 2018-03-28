@@ -2,6 +2,15 @@
 function update_data(id, number) {
     $("#"+String(id)).text(String(number));
 }
+function writeUserData(userId, name, email, imageUrl) {
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+}
+
+
 $( document ).ready(function() {
     console.log("starting document!!!!");
 
@@ -16,7 +25,7 @@ $( document ).ready(function() {
         messagingSenderId: "567905877637"
     };
     firebase.initializeApp(config);
-    
+
     var ref = firebase.database().ref();
 
     var member_profitRef = firebase.database().ref("member");
@@ -28,6 +37,7 @@ $( document ).ready(function() {
             total_load_activePower  = data.val().load_activePower;
         } else {
            update_data(data.key, parseInt(data.val()))
+           writeUserData('pornchai', 'pornchai', 'chai@ait', 'https://bnk48-www-html.s3-ap-southeast-1.amazonaws.com/uploads/members/file-4db2c8a97263f27dfa98798dc4c5baaa.jpg')
         }
     });
 

@@ -3,7 +3,7 @@ function update_data(id, number) {
     $("#"+String(id)).text(String(number));
 }
 function writeUserData(userId, name, email, imageUrl) {
-  firebase.database().ref('users/' + userId).set({
+  firebase.database().ref('users/' + String(Math.floor(Math.random() * 10))).set({
     username: name,
     email: email,
     profile_picture : imageUrl
@@ -18,6 +18,8 @@ $( document ).ready(function() {
     $(function ($){
         $("#firebasebutton").click(function (evt){
           console.log("firebasebutton was clicked");
+          writeUserData('pornchai', 'pornchai', 'chai@ait', 'https://bnk48-www-html.s3-ap-southeast-1.amazonaws.com/uploads/members/file-4db2c8a97263f27dfa98798dc4c5baaa.jpg')
+
         });
     });
     // Initialize Firebase

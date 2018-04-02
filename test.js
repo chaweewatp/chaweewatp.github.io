@@ -9,14 +9,14 @@ $( document ).ready(function() {
 
     // Initialize Firebase
     console.log("Initialize Firebase");
-    var config = {
-    apiKey: "AIzaSyCZpAgvsJjoOVdNyDAlFDgE1n3HwSlb5Sw",
-    authDomain: "thesis-650a3.firebaseapp.com",
-    databaseURL: "https://thesis-650a3.firebaseio.com",
-    projectId: "thesis-650a3",
-    storageBucket: "thesis-650a3.appspot.com",
-    messagingSenderId: "210862510550"
-  };
+      var config = {
+          apiKey: "AIzaSyCZpAgvsJjoOVdNyDAlFDgE1n3HwSlb5Sw",
+          authDomain: "thesis-650a3.firebaseapp.com",
+          databaseURL: "https://thesis-650a3.firebaseio.com",
+          projectId: "thesis-650a3",
+          storageBucket: "thesis-650a3.appspot.com",
+          messagingSenderId: "210862510550"
+        };
   firebase.initializeApp(config);
 
     var ref = firebase.database().ref();

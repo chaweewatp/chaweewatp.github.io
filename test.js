@@ -21,7 +21,7 @@ $( document ).ready(function() {
 
     var ref = firebase.database().ref();
 
-    var numRef = firebase.database().ref("overall");
+    var numRef = firebase.database().ref("PJM_5_bus_PIPS");
 
     numRef.on("child_changed", function(data) {
         console.log(data.key);

@@ -21,9 +21,9 @@ $( document ).ready(function() {
 
     var ref = firebase.database().ref();
 
-    var numRef = firebase.database().ref("PJM_5_bus_PIPS");
+    var timeRef = firebase.database().ref("PJM_5_bus_PIPS");
 
-    numRef.on("child_changed", function(data) {
+    timeRef.on("child_changed", function(data) {
         console.log(data.key);
         console.log(data.val());
         if(data.key == "1PV221445K1200100") {

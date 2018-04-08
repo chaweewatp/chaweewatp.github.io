@@ -18,11 +18,11 @@ $( document ).ready(function() {
           messagingSenderId: "210862510550"
         };
   firebase.initializeApp(config);
-
     var ref = firebase.database().ref();
-
-    var timeRef = firebase.database().ref("PJM_5_bus_PIPS");
-
+    var time_5bus_BF_Ref = firebase.database().ref("PJM_5_bus_PIPS");
+    var time_5bus_HBF_Ref = firebase.database().ref("PJM_5_bus_heuristic_PIPS");
+    var time_118bus_BF_Ref = firebase.database().ref("118_bus_PIPS");
+    var time_118bus_HBF_Ref = firebase.database().ref("118_bus_heuristic_PIPS");
     timeRef.on("child_changed", function(data) {
         console.log(data.key);
         console.log(data.val());

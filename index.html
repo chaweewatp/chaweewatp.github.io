@@ -352,16 +352,24 @@
               <h3 class="mbr-section-title display-2">Proposed method (cont')</h3>
                 <small class="mbr-section-subtitle">ACOPF</small>
             </div>
-            <div class="col-xs-12 lead"><p>xxxx</p>
+            <div class="col-xs-12 lead">
+              <p>In transmission system can be fomulted as minimize</p>
+              <div lang="latex"> \sum_{i=1}^{N} (C_{G_{i}} \times P_{G_{i}} </div>
+              <p>Subhect to:</p>
+              <div lang="latex"> P_{G_{i}} - P_{L_{i}} - P(V,\theta) = 0 </div>
+              <div lang="latex"> Q_{Gi}-Q_{Li}-Q(V,\theta)=0 </div>
+              <div lang="latex"> |F_{k}|=F_{k}^{max} </div>
+              <div lang="latex"> P_{Gi}^{min} \leq P_{Gi} \leq P_{Gi}^{max} </div>
+              <div lang="latex"> Q_{Gi}^{min} \leq Q_{Gi} \leq Q_{Gi}^{max} </div>
+              <div lang="latex"> V_{i}^{min} \leq V_{i} \leq V_{i}^{max} </div>
             </div>
             <div class="col-xs-12">
                 <small class="mbr-section-subtitle">LMP calculation</small>
             </div>
-            <div class="container text-xs-center">
-              <p>The LMP at bus i can be written as follows:</p>
+            <div class="col-xs-12 lead"><p>The LMP at bus i can be written as follows:</p>
               <div lang="latex">LMP_{i}=LMP^{energy}+LMP_{i}^{congestion}+LMP_{i}^{loss}</div>
               <p>The LMP at any bus also be calculated in</p>
-              <div lang="latex"> LMP_{i}=\Sum_{j=1}^{N} C^{T} + \frac{\partial G_{j}}{\partial D_{j}} </div>
+              <div lang="latex"> LMP_{i}=\sum_{j=1}^{N} (C^{T} + \frac{\partial G_{j}}{\partial D_{j}}) </div>
             </div>
         </div>
     </div>

@@ -434,9 +434,20 @@ h6,
 #header3-7 .mbr-section-subtitle {
   text-align: center;
 }
+#header3-u .mbr-section-title,
+#header3-u .mbr-section-subtitle {
+  text-align: center;
+}
 #header3-e .mbr-section-title,
 #header3-e .mbr-section-subtitle {
   text-align: center;
+}
+#header3-w .mbr-section-title,
+#header3-w .mbr-section-subtitle {
+  text-align: center;
+}
+#content2-x BLOCKQUOTE {
+  color: #000000;
 }
 #testimonials3-i .mbr-section-title {
   color: #efefef;

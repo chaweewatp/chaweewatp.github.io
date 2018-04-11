@@ -353,22 +353,24 @@
                 <small class="mbr-section-subtitle">ACOPF</small>
             </div>
             <div class="col-xs-12 lead">
-              <p>In transmission system can be fomulted as minimize</p>
+              <p>In transmission system can be fomulted as minimize:</p>
               <div lang="latex"> \sum_{i=1}^{N} (C_{G_{i}} \times P_{G_{i}} </div>
-              <p>Subhect to:</p>
+              <p>Subject to:</p>
               <div lang="latex"> P_{G_{i}} - P_{L_{i}} - P(V,\theta) = 0 </div>
               <div lang="latex"> Q_{Gi}-Q_{Li}-Q(V,\theta)=0 </div>
               <div lang="latex"> |F_{k}|=F_{k}^{max} </div>
               <div lang="latex"> P_{Gi}^{min} \leq P_{Gi} \leq P_{Gi}^{max} </div>
               <div lang="latex"> Q_{Gi}^{min} \leq Q_{Gi} \leq Q_{Gi}^{max} </div>
               <div lang="latex"> V_{i}^{min} \leq V_{i} \leq V_{i}^{max} </div>
+              <p>where:</p>
+              <p><div lang="latex">C_{Gi}</div> is generation cost of generator <div lang="latex">G_i</div> ($/MWhr). <div lang="latex">P_{Gi}</div> and <div lang="latex">Q_{Gi}</div> are real and reactive power output of generator <div lang="latex">G_{i}</div> (MW, MVar). <div lang="latex">P_{Gi}^{min}</div> and <div lang="latex">P_{Gi}^{max}</div> are minimum and maximum limit of <div lang="latex"> P_{Gi} </div>. <div lang="latex">Q_{Gi}^{min}</div> and <div lang="latex">Q_{Gi}^{max}</div> are minimum and maximum limit of <div lang="latex"> Q_{Gi} </div>. <div lang="latex">P_{Li}</div> and <div lang="latex">Q_{Li}</div> are real and reactive power demand of load <div lang="latex">L_{i}</div> (MW, MVar). <div lang="latex">F_{k}</div> and <div lang="latex">F_{k}^{max}</div> are line flow and its maximum limit at bus i. <div lang="latex">V_{i}^{min}</div> and <div lang="latex">V_{i}^{max}</div> are minimum and maximum voltage limit at bus i.</p>
             </div>
             <div class="col-xs-12">
                 <small class="mbr-section-subtitle">LMP calculation</small>
             </div>
             <div class="col-xs-12 lead"><p>The LMP at bus i can be written as follows:</p>
               <div lang="latex">LMP_{i}=LMP^{energy}+LMP_{i}^{congestion}+LMP_{i}^{loss}</div>
-              <p>The LMP at any bus also be calculated in</p>
+              <p>The LMP at any bus also be calculated in:</p>
               <div lang="latex"> LMP_{i}=\sum_{j=1}^{N} (C^{T} + \frac{\partial G_{j}}{\partial D_{j}}) </div>
             </div>
         </div>
